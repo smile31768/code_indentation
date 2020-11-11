@@ -112,3 +112,76 @@ int main()
     int b;                      //缩进一个Tab（四个字符），
     printf("Helloworld!");      //上下花括号对齐前方int。
 }
+```
+同理，当一个程序有多个函数，每个函数也应该如上处理：
+```C++
+#include <stdio.h>
+int main()
+{
+    void print();
+    int a;
+    int b;
+    print();
+}
+
+void print()
+{
+    printf("Helloworld!");
+}
+```
+**(2) 在遇到if，else，for，do，while等语句时，花括号中间所有代码再往前缩进一个Tab**
+```C++
+//简单while语句
+#include <stdio.h>
+int main()
+{
+    int i = 1;
+    int sum = 0;
+    while (i <= 100)
+    {
+        sum = sum + i;      //此处相对其他语句往前再缩进一个
+        i++;                //Tab的距离，花括号对准while
+    }
+}
+```
+当多种语句嵌套时，处理方法同上：
+```C++
+#include <stdio.h>
+int main()
+{
+    int n;
+    for (n = 100; n <= 200; n++)
+    {
+        if (n % 3 == 0)
+        {
+            continue;       //再相对if往前缩进一个Tab
+        }
+        printf("%d",n);
+    }
+    printf("\n");
+    return 0;
+}
+```
+**※特殊情况：使用switch……case时，case相对switch不缩进！**
+这个特殊情况可不是我说特殊他就是特殊的，这是微软老大哥告诉我的。</br>
+`https://msdn.microsoft.com/zh-cn/library/k0t5wee3.aspx`
+```C++
+#include <stdio.h>
+int main()
+{
+    char grade;
+    scanf ("%c",&grade);
+    switch (grade)
+    {
+    case 'A':                   //case向上对齐switch，不缩进
+        printf ("85-100");
+        break;
+    case 'B':
+        printf ("70-84");       //此处代码块如(2)，相对case
+        break;                  //向右缩进一个Tab。
+    case 'C':
+        printf ("60-70");
+        break;
+    }
+}
+```
