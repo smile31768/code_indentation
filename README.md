@@ -188,16 +188,18 @@ int main()
 ### 花括号应该放在哪？
 关于花括号的放置位置，其实有两种风格的写法，一种主张左括号连在函数后不换行`K&R风格`，另外一种便是换行党派，也就是我上面写的那样`微软风格`。不管那种风格（党派）其实都没有对错之分，见仁见智。但是！一定不要写成下面（错误示范）这样！
 ```C++
-//K&R风格
-#include <stdio.h>
-int main(){
-    int i = 1;
-    int sum = 0;
-    while (i <= 100){
-        sum = sum + i;
-        i++;
-    }
-}
+//K&R风格                   //微软风格
+#include <stdio.h>          #include <stdio.h>
+int main(){                 int main()
+    int i = 1;              {
+    int sum = 0;                int i = 1; 
+    while (i <= 100){           int sum = 0; 
+        sum = sum + i;          while (i <= 100)
+        i++;                    {
+    }                               sum = sum + i;
+}                                   i++；
+                                }
+                            }
 ```
 ```C++
 //错误示范
