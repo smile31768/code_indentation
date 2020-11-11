@@ -228,7 +228,7 @@ int main()
 
 　当然，如果是使用Microsoft Visual系列进行编程的初学者，推荐使用微软风格的花括号书写风格。
 
-**关于单语句if，else，do，while，for，也应该在语句上下加花括号</br>
+**★关于单语句if，else，do，while，for，也应该在语句上下加花括号</br>**
 ```C++
 if (x > 10)
 {
