@@ -101,7 +101,7 @@ int main()
 1. 首先，Tab键按一下当你空格按四下</br>
 2. Tab可以对多行进行操作。举个例子，当你想要缩进一整个代码块时，你可以全选整个代码块，按下Tab即可对整块进行缩进，而不用一行一行地敲打空格</br>
 3. 以上两点还不够你使用Tab？</br>
-　　综上，我建议大家使用Tab进行代码缩进。
+综上，我建议大家使用Tab进行代码缩进。
 
 `附1：使用Shift+Tab可以撤销缩进，同样可以同时多行操作`</br>
 `附2：使用Tab键虽然方便，但也会导致一些不可预料的问题（在Python中，此问题尤为严重），因此建议将Tab设置为“使用Tab替代四个空格”，具体设置方法不在此展开讲，详细方法自己百度`
@@ -167,7 +167,7 @@ int main()
 ```
 **※特殊情况：使用switch……case时，case相对switch不缩进！**</br>
 　这个特殊情况可不是我说特殊他就是特殊的，这是微软老大哥说的。</br>
-`https://msdn.microsoft.com/zh-cn/library/k0t5wee3.aspx`
+　`https://msdn.microsoft.com/zh-cn/library/k0t5wee3.aspx`
 ```C++
 #include <stdio.h>
 int main()
